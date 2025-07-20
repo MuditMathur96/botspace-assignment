@@ -1,0 +1,323 @@
+  .main-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #f5f5f5;
+          padding: 32px;
+          color:white
+          
+        }
+
+        /* Samsung Device Styles */
+        .phone-container {
+          position: relative;
+          width: 260px;
+          height: 540px;
+          margin: 0 auto;
+          
+        }
+
+        .phone-frame {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(145deg, #1a1a1a 0%, #0a0a0a 50%, #000000 100%);
+          border-radius: 40px;
+          border: 5px solid #222;
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .phone-screen-bezel {
+          position: absolute;
+          inset: 4px;
+          background-color: white;
+          border-radius: 36px;
+          overflow: hidden;
+        }
+
+        .phone-display {
+          position: absolute;
+          inset: 0;
+          background-color: #121212;
+          border-radius: 36px;
+          overflow: hidden;
+        }
+
+        .camera-cutout {
+          position: absolute;
+          top: 8px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 55px;
+          height: 8px;
+          background-color: #121212;
+          border-radius: 7px;
+          border: 1px solid #333;
+          z-index: 30;
+        }
+
+        /* App Content */
+        .app-content {
+          flex: 1;
+          background-color: #fafafa;
+          overflow-y: auto;
+        }
+
+        /* Navigation Bar */
+        .navigation-bar {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 20px;
+          background-color: #121212;
+          border-top: 1px solid #e5e5e5;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 20;
+        }
+
+        .nav-gestures {
+          display: flex;
+          align-items: center;
+          gap: 64px;
+        }
+
+
+        .nav-home {
+          width: 64px;
+          height: 4px;
+          background-color: #4b5563;
+          border-radius: 2px;
+        }
+
+        /* Instagram Styles */
+        .page-header {
+          
+          background-color: #121212;
+          border-bottom: 1px solid #e5e5e5;
+          /* padding-top: 16px; */
+          text-align: center;
+          font-size: 12px;
+          
+        }
+
+        .page-header .title{
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .page-header .header{
+            font-size:14px;
+            font-weight: 500;
+        }
+
+        .instagram-title {
+          font-size: 24px;
+          font-weight: bold;
+          background: linear-gradient(45deg, #8B5CF6, #EC4899, #F97316);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          margin: 0;
+        }
+
+        .header-icons {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          color: #374151;
+        }
+
+        /* Instagram Post Styles */
+        .instagram-post {
+          background-color: #121212;
+          width: 100%;
+        }
+
+        .post-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5px;
+        }
+
+        .post-user-info {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+
+        .avatar {
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .avatar-sm {
+          width: 32px;
+          height: 32px;
+        }
+
+        .user-details {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .username-container {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
+
+        .username {
+          font-weight: 600;
+          font-size: 12px;
+          color: white;
+        }
+
+       
+
+      
+
+        .more-btn {
+          padding: 4px;
+          background: none;
+          border: none;
+          color: #dadada;
+          cursor: pointer;
+        }
+
+        .post-image-container {
+          aspect-ratio: 1;
+          background-color: #121212;
+        }
+
+        .post-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .post-actions {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 8px;
+        }
+
+        .action-buttons-left {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+        }
+
+        .action-btn {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          background: none;
+          border: none;
+          color: #374151;
+          cursor: pointer;
+          transition: color 0.2s;
+        }
+
+        .action-btn:hover {
+          color: #111827;
+        }
+
+        .action-btn.active {
+          color: #EF4444;
+        }
+
+        .action-text {
+          font-size: 10px;
+        }
+
+        .likes-section {
+          padding: 0 10px;
+        }
+
+        .likes-count {
+          font-weight: 600;
+          font-size: 12px;
+          color: #111827;
+        }
+
+        .caption-section {
+          margin:0;
+          padding:3px;
+          text-align: left;
+        }
+
+        .caption-username {
+          font-weight: 600;
+          font-size: 12px;
+          margin-right: 4px;
+        }
+
+        .caption-text {
+          display:inline-block;
+          font-size: 11px;
+          line-height: 1.5;
+
+         
+        }
+
+        .comments-section {
+          padding: 0 10px 4px;
+        }
+
+        .view-comments-btn {
+          font-size: 14px;
+          color: #6B7280;
+          background: none;
+          border: none;
+          cursor: pointer;
+          margin-bottom: 4px;
+          display: block;
+        }
+
+        .comment {
+          font-size: 14px;
+          margin-bottom: 2px;
+        }
+
+        .comment-username {
+          font-weight: 600;
+          color: #111827;
+          margin-right: 8px;
+        }
+
+        .comment-text {
+          color: #111827;
+        }
+
+        .time-section {
+          padding: 0 12px 12px;
+        }
+
+        .time-text {
+          font-size: 12px;
+          color: #6B7280;
+          text-transform: uppercase;
+        }
+
+        /* Component Info */
+        .component-info {
+          margin-top: 32px;
+          text-align: center;
+        }
+
+        .info-title {
+          font-size: 20px;
+          font-weight: 600;
+          color: #1F2937;
+          margin-bottom: 8px;
+        }
+
+        .info-description {
+          color: #6B7280;
+          max-width: 384px;
+          margin: 0;
+        }

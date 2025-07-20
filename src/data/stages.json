@@ -1,0 +1,29 @@
+[
+  {
+    "stageId": 1,
+    "stageName": "post-selection",
+    "title":"Post",
+    "isFinal": false,
+    "isFirst": true,
+    "component": "PostSelectionComponent",
+    "nextStage": 2
+  },
+  {
+    "stageId": 2,
+    "stageName": "comment-filter",
+    "title":"Comment",
+    "isFinal": false,
+    "isFirst": false,
+    "component": "CommentFilterComponent",
+    "nextStage": 3
+  },
+  {
+    "stageId": 3,
+    "stageName": "dm-config",
+    "title":"DM",
+    "isFinal": true,
+    "isFirst": false,
+    "component": "DmConfigComponent",
+    "nextStage": null
+  }
+]
