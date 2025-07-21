@@ -19,7 +19,7 @@ function Tabs(){
 
     return (<div 
     style={{
-        width:"14vw",
+      
         minWidth:"200px",
         marginLeft:"auto",
         marginRight:"auto",
@@ -59,14 +59,20 @@ function Preview(){
     const Component =  isWorkflowComplete ?<ChatScreen />:templates[currentStage || "post-selection"];
     return (<div
     style={{
-        padding:"10px 25px",
-        width:"100%"
+        padding:"10px 10px",
+        width:"100%",
+        height:"100%",
+        display:"flex",
+        flexDirection:"column",
+        justifyContent:"center",
+        alignItems:"center"
     }}
     >
         <div
         style={{
             display:"flex",
             justifyContent:"space-between",
+            width:"100%"
             
         }}
         >
@@ -81,8 +87,16 @@ function Preview(){
             color="primary" >Go Live</Button>}
         </div>
         
+        <div style={{
+            flex:1,
+            display:'flex',
+            flexDirection:"column",
+            alignItems:'center',
+            justifyContent:'center'
+        }}>
         {Component}
         <Tabs />
+        </div>
     </div>)
 
 }
