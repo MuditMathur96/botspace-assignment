@@ -30,14 +30,7 @@ const ChatScreen = () => {
     }}
     >
       <SamsungS24>
-        <div
-        style={{
-            height:"20px",
-            backgroundColor:"#121212"
-        }}
-        >
-
-        </div>
+        
         {/* Header */}
         <div 
         style={{
